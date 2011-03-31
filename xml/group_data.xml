@@ -1,1 +1,966 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/group_data.xml
+<tryton>
+    <data>
+
+        <record model="product.group" id="group_1">
+            <field name="name">Расход.матер. д/лаз.принт.факсов</field>
+        </record>
+
+        <record model="product.group" id="group_2">
+            <field name="name">Картридж к Label принтеру</field>
+        </record>
+
+        <record model="product.group" id="group_3">
+            <field name="name">Принтер Label</field>
+        </record>
+
+        <record model="product.group" id="group_4">
+            <field name="name">Торговое оборудование</field>
+        </record>
+
+        <record model="product.group" id="group_5">
+            <field name="name">Картридж струйный</field>
+        </record>
+
+        <record model="product.group" id="group_6">
+            <field name="name">Картридж д/касс.апп.,модул.принт.</field>
+        </record>
+
+        <record model="product.group" id="group_7">
+            <field name="name">Картридж д/калькул.</field>
+        </record>
+
+        <record model="product.group" id="group_8">
+            <field name="name">Картридж д/матр.принт.</field>
+        </record>
+
+        <record model="product.group" id="group_9">
+            <field name="name">Бумага для офис.техники</field>
+        </record>
+
+        <record model="product.group" id="group_10">
+            <field name="name">Писчая бумага</field>
+        </record>
+
+        <record model="product.group" id="group_11">
+            <field name="name">Бумага цветная</field>
+        </record>
+
+        <record model="product.group" id="group_12">
+            <field name="name">Бумага для полноцв.лазер.печ.</field>
+        </record>
+
+        <record model="product.group" id="group_13">
+            <field name="name">Бумага для полноцв.струй.печ.</field>
+        </record>
+
+        <record model="product.group" id="group_14">
+            <field name="name">Бумага для плотт.,копир.раб.</field>
+        </record>
+
+        <record model="product.group" id="group_15">
+            <field name="name">Самокл. этикетки</field>
+        </record>
+
+        <record model="product.group" id="group_16">
+            <field name="name">Бесклеевые вкладыши</field>
+        </record>
+
+        <record model="product.group" id="group_17">
+            <field name="name">Этикетки самоклеящиеся</field>
+        </record>
+
+        <record model="product.group" id="group_18">
+            <field name="name">Самокоп.непрер.компьютерная бумага</field>
+        </record>
+
+        <record model="product.group" id="group_19">
+            <field name="name">Перфорированная бумага</field>
+        </record>
+
+        <record model="product.group" id="group_20">
+            <field name="name">Ролики для принтеров</field>
+        </record>
+
+        <record model="product.group" id="group_21">
+            <field name="name">Ролики для телетайпов</field>
+        </record>
+
+        <record model="product.group" id="group_22">
+            <field name="name">Ролики для касс и калькуляторов</field>
+        </record>
+
+        <record model="product.group" id="group_23">
+            <field name="name">Ролики для факсов</field>
+        </record>
+
+        <record model="product.group" id="group_24">
+            <field name="name">Во флатах/рулон.бумага</field>
+        </record>
+
+        <record model="product.group" id="group_25">
+            <field name="name">Копировальная бумага</field>
+        </record>
+
+        <record model="product.group" id="group_26">
+            <field name="name">Пакет</field>
+        </record>
+
+        <record model="product.group" id="group_27">
+            <field name="name">Конверт</field>
+        </record>
+
+        <record model="product.group" id="group_28">
+            <field name="name">Бух книги</field>
+        </record>
+
+        <record model="product.group" id="group_29">
+            <field name="name">Бух бланки</field>
+        </record>
+
+        <record model="product.group" id="group_30">
+            <field name="name">Самокоп.бланки</field>
+        </record>
+
+        <record model="product.group" id="group_31">
+            <field name="name">Бух брошюры</field>
+        </record>
+
+        <record model="product.group" id="group_32">
+            <field name="name">Блок-кубик</field>
+        </record>
+
+        <record model="product.group" id="group_33">
+            <field name="name">Клейкие закладки</field>
+        </record>
+
+        <record model="product.group" id="group_34">
+            <field name="name">Диспенсер для закладок</field>
+        </record>
+
+        <record model="product.group" id="group_35">
+            <field name="name">Блокнот</field>
+        </record>
+
+        <record model="product.group" id="group_36">
+            <field name="name">Тетрадь</field>
+        </record>
+
+        <record model="product.group" id="group_37">
+            <field name="name">Бизнес-тетрадь</field>
+        </record>
+
+        <record model="product.group" id="group_38">
+            <field name="name">Папка</field>
+        </record>
+
+        <record model="product.group" id="group_39">
+            <field name="name">Визитница</field>
+        </record>
+
+        <record model="product.group" id="group_40">
+            <field name="name">Сезонный набор</field>
+        </record>
+
+        <record model="product.group" id="group_41">
+            <field name="name">Алфавитная книжка</field>
+        </record>
+
+        <record model="product.group" id="group_42">
+            <field name="name">Открытка</field>
+        </record>
+
+        <record model="product.group" id="group_43">
+            <field name="name">Разделитель листов</field>
+        </record>
+
+        <record model="product.group" id="group_44">
+            <field name="name">Принадл.</field>
+        </record>
+
+        <record model="product.group" id="group_45">
+            <field name="name">Скрепки</field>
+        </record>
+
+        <record model="product.group" id="group_46">
+            <field name="name">Архивные системы</field>
+        </record>
+
+        <record model="product.group" id="group_47">
+            <field name="name">Подвесная регистратура</field>
+        </record>
+
+        <record model="product.group" id="group_48">
+            <field name="name">Планшет</field>
+        </record>
+
+        <record model="product.group" id="group_49">
+            <field name="name">Стержень</field>
+        </record>
+
+        <record model="product.group" id="group_50">
+            <field name="name">Чернила</field>
+        </record>
+
+        <record model="product.group" id="group_51">
+            <field name="name">Набор пишущих принадл.</field>
+        </record>
+
+        <record model="product.group" id="group_52">
+            <field name="name">Футляр для ручек</field>
+        </record>
+
+        <record model="product.group" id="group_53">
+            <field name="name">Ручка</field>
+        </record>
+
+        <record model="product.group" id="group_54">
+            <field name="name">Роллер</field>
+        </record>
+
+        <record model="product.group" id="group_55">
+            <field name="name">Линер</field>
+        </record>
+
+        <record model="product.group" id="group_56">
+            <field name="name">Маркер</field>
+        </record>
+
+        <record model="product.group" id="group_57">
+            <field name="name">Фломастер</field>
+        </record>
+
+        <record model="product.group" id="group_58">
+            <field name="name">Карандаш</field>
+        </record>
+
+        <record model="product.group" id="group_59">
+            <field name="name">Ластик</field>
+        </record>
+
+        <record model="product.group" id="group_60">
+            <field name="name">Точилка</field>
+        </record>
+
+        <record model="product.group" id="group_61">
+            <field name="name">Стержень микрограф</field>
+        </record>
+
+        <record model="product.group" id="group_62">
+            <field name="name">Тушь</field>
+        </record>
+
+        <record model="product.group" id="group_63">
+            <field name="name">Пластилин</field>
+        </record>
+
+        <record model="product.group" id="group_64">
+            <field name="name">Краски</field>
+        </record>
+
+        <record model="product.group" id="group_65">
+            <field name="name">Мел</field>
+        </record>
+
+        <record model="product.group" id="group_66">
+            <field name="name">Линейка</field>
+        </record>
+
+        <record model="product.group" id="group_67">
+            <field name="name">Доска д/информации</field>
+        </record>
+
+        <record model="product.group" id="group_68">
+            <field name="name">Тубус</field>
+        </record>
+
+        <record model="product.group" id="group_69">
+            <field name="name">Готовальня</field>
+        </record>
+
+        <record model="product.group" id="group_70">
+            <field name="name">Набор настольный</field>
+        </record>
+
+        <record model="product.group" id="group_71">
+            <field name="name">Диспенсер для клейкой ленты</field>
+        </record>
+
+        <record model="product.group" id="group_72">
+            <field name="name">Скрепочница</field>
+        </record>
+
+        <record model="product.group" id="group_73">
+            <field name="name">Подставка</field>
+        </record>
+
+        <record model="product.group" id="group_74">
+            <field name="name">Корзина</field>
+        </record>
+
+        <record model="product.group" id="group_75">
+            <field name="name">Степлер</field>
+        </record>
+
+        <record model="product.group" id="group_76">
+            <field name="name">Вертикальный накопитель</field>
+        </record>
+
+        <record model="product.group" id="group_77">
+            <field name="name">Дырокол</field>
+        </record>
+
+        <record model="product.group" id="group_78">
+            <field name="name">Лоток для бумаг</field>
+        </record>
+
+        <record model="product.group" id="group_79">
+            <field name="name">Бокс с выдвижными лотками</field>
+        </record>
+
+        <record model="product.group" id="group_80">
+            <field name="name">Набор класса "Люкс"</field>
+        </record>
+
+        <record model="product.group" id="group_81">
+            <field name="name">Коврик на стол</field>
+        </record>
+
+        <record model="product.group" id="group_82">
+            <field name="name">Сувенир</field>
+        </record>
+
+        <record model="product.group" id="group_83">
+            <field name="name">Картотека</field>
+        </record>
+
+        <record model="product.group" id="group_84">
+            <field name="name">Клейкая лента</field>
+        </record>
+
+        <record model="product.group" id="group_85">
+            <field name="name">Лотки</field>
+        </record>
+
+        <record model="product.group" id="group_86">
+            <field name="name">Глобус</field>
+        </record>
+
+        <record model="product.group" id="group_87">
+            <field name="name">Степлеры/дыроколы</field>
+        </record>
+
+        <record model="product.group" id="group_88">
+            <field name="name">Скобы к степлеру</field>
+        </record>
+
+        <record model="product.group" id="group_89">
+            <field name="name">Анти-степлер</field>
+        </record>
+
+        <record model="product.group" id="group_90">
+            <field name="name">Аксессуары для досок</field>
+        </record>
+
+        <record model="product.group" id="group_91">
+            <field name="name">Кнопки</field>
+        </record>
+
+        <record model="product.group" id="group_92">
+            <field name="name">Булавки</field>
+        </record>
+
+        <record model="product.group" id="group_93">
+            <field name="name">Зажим для бумаг</field>
+        </record>
+
+        <record model="product.group" id="group_94">
+            <field name="name">Резинка</field>
+        </record>
+
+        <record model="product.group" id="group_95">
+            <field name="name">Подушка для смачивания пальцев</field>
+        </record>
+
+        <record model="product.group" id="group_96">
+            <field name="name">Лупа</field>
+        </record>
+
+        <record model="product.group" id="group_97">
+            <field name="name">Клей</field>
+        </record>
+
+        <record model="product.group" id="group_98">
+            <field name="name">Ножницы</field>
+        </record>
+
+        <record model="product.group" id="group_99">
+            <field name="name">Нож канцелярский</field>
+        </record>
+
+        <record model="product.group" id="group_100">
+            <field name="name">Штрих</field>
+        </record>
+
+        <record model="product.group" id="group_101">
+            <field name="name">Разбавитель</field>
+        </record>
+
+        <record model="product.group" id="group_102">
+            <field name="name">Штемпельная прод-ия</field>
+        </record>
+
+        <record model="product.group" id="group_103">
+            <field name="name">Галантерея</field>
+        </record>
+
+        <record model="product.group" id="group_104">
+            <field name="name">Папка из кожи и к/з</field>
+        </record>
+
+        <record model="product.group" id="group_105">
+            <field name="name">Обложка</field>
+        </record>
+
+        <record model="product.group" id="group_106">
+            <field name="name">Проектор</field>
+        </record>
+
+        <record model="product.group" id="group_107">
+            <field name="name">Экран</field>
+        </record>
+
+        <record model="product.group" id="group_108">
+            <field name="name">Пленка для проекторов</field>
+        </record>
+
+        <record model="product.group" id="group_109">
+            <field name="name">Демо-система</field>
+        </record>
+
+        <record model="product.group" id="group_110">
+            <field name="name">Рамка</field>
+        </record>
+
+        <record model="product.group" id="group_111">
+            <field name="name">Держатель</field>
+        </record>
+
+        <record model="product.group" id="group_112">
+            <field name="name">Офисная техника</field>
+        </record>
+
+        <record model="product.group" id="group_113">
+            <field name="name">Настенные карты</field>
+        </record>
+
+        <record model="product.group" id="group_114">
+            <field name="name">Атлас</field>
+        </record>
+
+        <record model="product.group" id="group_115">
+            <field name="name">Информационное оборудование</field>
+        </record>
+
+        <record model="product.group" id="group_116">
+            <field name="name">Мебель</field>
+        </record>
+
+        <record model="product.group" id="group_117">
+            <field name="name">Убороч. инвентарь</field>
+        </record>
+
+        <record model="product.group" id="group_118">
+            <field name="name">Бейдж</field>
+        </record>
+
+        <record model="product.group" id="group_119">
+            <field name="name">Калькулятор</field>
+        </record>
+
+        <record model="product.group" id="group_120">
+            <field name="name">Телефон</field>
+        </record>
+
+        <record model="product.group" id="group_121">
+            <field name="name">Телефакс</field>
+        </record>
+
+        <record model="product.group" id="group_122">
+            <field name="name">Диктофон цифровой</field>
+        </record>
+
+        <record model="product.group" id="group_123">
+            <field name="name">Фотоаппарат</field>
+        </record>
+
+        <record model="product.group" id="group_124">
+            <field name="name">Копир офисный</field>
+        </record>
+
+        <record model="product.group" id="group_125">
+            <field name="name">Многофункциональное устройство</field>
+        </record>
+
+        <record model="product.group" id="group_126">
+            <field name="name">Принтер</field>
+        </record>
+
+        <record model="product.group" id="group_127">
+            <field name="name">Кабель</field>
+        </record>
+
+        <record model="product.group" id="group_128">
+            <field name="name">Сканер</field>
+        </record>
+
+        <record model="product.group" id="group_129">
+            <field name="name">Резак д/бумаги</field>
+        </record>
+
+        <record model="product.group" id="group_130">
+            <field name="name">Уничтожитель док-ов</field>
+        </record>
+
+        <record model="product.group" id="group_131">
+            <field name="name">Брошюровщик</field>
+        </record>
+
+        <record model="product.group" id="group_132">
+            <field name="name">Ламинатор</field>
+        </record>
+
+        <record model="product.group" id="group_133">
+            <field name="name">Расх.мат.д/переп. и ламин.</field>
+        </record>
+
+        <record model="product.group" id="group_134">
+            <field name="name">Счетчик банкнот</field>
+        </record>
+
+        <record model="product.group" id="group_135">
+            <field name="name">Пломбиратор</field>
+        </record>
+
+        <record model="product.group" id="group_136">
+            <field name="name">Сумка</field>
+        </record>
+
+        <record model="product.group" id="group_137">
+            <field name="name">Пломба</field>
+        </record>
+
+        <record model="product.group" id="group_138">
+            <field name="name">Сейф</field>
+        </record>
+
+        <record model="product.group" id="group_139">
+            <field name="name">Пенал</field>
+        </record>
+
+        <record model="product.group" id="group_140">
+            <field name="name">Банковское оборуд-ие</field>
+        </record>
+
+        <record model="product.group" id="group_141">
+            <field name="name">Детектор банкнот</field>
+        </record>
+
+        <record model="product.group" id="group_142">
+            <field name="name">Набор инкассаторский</field>
+        </record>
+
+        <record model="product.group" id="group_143">
+            <field name="name">Кольцо бандерольное</field>
+        </record>
+
+        <record model="product.group" id="group_144">
+            <field name="name">Лента бандерольная</field>
+        </record>
+
+        <record model="product.group" id="group_145">
+            <field name="name">Накладка</field>
+        </record>
+
+        <record model="product.group" id="group_146">
+            <field name="name">Лампа</field>
+        </record>
+
+        <record model="product.group" id="group_147">
+            <field name="name">Сетевой фильтр</field>
+        </record>
+
+        <record model="product.group" id="group_148">
+            <field name="name">Устр.</field>
+        </record>
+
+        <record model="product.group" id="group_149">
+            <field name="name">ИБП</field>
+        </record>
+
+        <record model="product.group" id="group_150">
+            <field name="name">Электрич.лампа</field>
+        </record>
+
+        <record model="product.group" id="group_151">
+            <field name="name">Элементы питания</field>
+        </record>
+
+        <record model="product.group" id="group_152">
+            <field name="name">Сумка для ноутбука</field>
+        </record>
+
+        <record model="product.group" id="group_153">
+            <field name="name">Гарнитура</field>
+        </record>
+
+        <record model="product.group" id="group_154">
+            <field name="name">Микрофон</field>
+        </record>
+
+        <record model="product.group" id="group_155">
+            <field name="name">Акустическая система</field>
+        </record>
+
+        <record model="product.group" id="group_156">
+            <field name="name">Веб-камера</field>
+        </record>
+
+        <record model="product.group" id="group_157">
+            <field name="name">USB разветвитель</field>
+        </record>
+
+        <record model="product.group" id="group_158">
+            <field name="name">Тросик с замком</field>
+        </record>
+
+        <record model="product.group" id="group_159">
+            <field name="name">USB Bluetooth адаптер</field>
+        </record>
+
+        <record model="product.group" id="group_160">
+            <field name="name">Картридер</field>
+        </record>
+
+        <record model="product.group" id="group_161">
+            <field name="name">Клавиатура</field>
+        </record>
+
+        <record model="product.group" id="group_162">
+            <field name="name">Мышь</field>
+        </record>
+
+        <record model="product.group" id="group_163">
+            <field name="name">Коврик д/мыши</field>
+        </record>
+
+        <record model="product.group" id="group_164">
+            <field name="name">Защитная пленка для клавиатуры</field>
+        </record>
+
+        <record model="product.group" id="group_165">
+            <field name="name">Держатель для бумаг</field>
+        </record>
+
+        <record model="product.group" id="group_166">
+            <field name="name">Носители информации</field>
+        </record>
+
+        <record model="product.group" id="group_167">
+            <field name="name">Карта памяти</field>
+        </record>
+
+        <record model="product.group" id="group_168">
+            <field name="name">Флэш-память</field>
+        </record>
+
+        <record model="product.group" id="group_169">
+            <field name="name">Портативный жесткий диск</field>
+        </record>
+
+        <record model="product.group" id="group_170">
+            <field name="name">Бокс для дискет</field>
+        </record>
+
+        <record model="product.group" id="group_171">
+            <field name="name">Стойка</field>
+        </record>
+
+        <record model="product.group" id="group_172">
+            <field name="name">Бокс для CD/DVD дисков</field>
+        </record>
+
+        <record model="product.group" id="group_173">
+            <field name="name">Портмоне для CD/DVD дисков</field>
+        </record>
+
+        <record model="product.group" id="group_174">
+            <field name="name">Конверты</field>
+        </record>
+
+        <record model="product.group" id="group_175">
+            <field name="name">Футляр для CD/DVD дисков</field>
+        </record>
+
+        <record model="product.group" id="group_176">
+            <field name="name">Салфетки</field>
+        </record>
+
+        <record model="product.group" id="group_177">
+            <field name="name">Спрей для чистки оптики</field>
+        </record>
+
+        <record model="product.group" id="group_178">
+            <field name="name">Спрей для чистки оргтехники</field>
+        </record>
+
+        <record model="product.group" id="group_179">
+            <field name="name">Спрей для чистки экрана</field>
+        </record>
+
+        <record model="product.group" id="group_180">
+            <field name="name">Набор для чистки оргтехники</field>
+        </record>
+
+        <record model="product.group" id="group_181">
+            <field name="name">СпецМеб</field>
+        </record>
+
+        <record model="product.group" id="group_182">
+            <field name="name">Вешалка</field>
+        </record>
+
+        <record model="product.group" id="group_183">
+            <field name="name">Госуд-ая символика</field>
+        </record>
+
+        <record model="product.group" id="group_184">
+            <field name="name">Часы</field>
+        </record>
+
+        <record model="product.group" id="group_185">
+            <field name="name">Чай</field>
+        </record>
+
+        <record model="product.group" id="group_186">
+            <field name="name">Кофе</field>
+        </record>
+
+        <record model="product.group" id="group_187">
+            <field name="name">Какао</field>
+        </record>
+
+        <record model="product.group" id="group_188">
+            <field name="name">Молочная продукция</field>
+        </record>
+
+        <record model="product.group" id="group_189">
+            <field name="name">Бакалея</field>
+        </record>
+
+        <record model="product.group" id="group_190">
+            <field name="name">Кондитерские изделия</field>
+        </record>
+
+        <record model="product.group" id="group_191">
+            <field name="name">Безалкогольные напитки</field>
+        </record>
+
+        <record model="product.group" id="group_192">
+            <field name="name">Чайник</field>
+        </record>
+
+        <record model="product.group" id="group_193">
+            <field name="name">Кофемашина</field>
+        </record>
+
+        <record model="product.group" id="group_194">
+            <field name="name">Кофеварка</field>
+        </record>
+
+        <record model="product.group" id="group_195">
+            <field name="name">Микроволновая печь</field>
+        </record>
+
+        <record model="product.group" id="group_196">
+            <field name="name">Очищающее устр-во</field>
+        </record>
+
+        <record model="product.group" id="group_197">
+            <field name="name">Холодильник</field>
+        </record>
+
+        <record model="product.group" id="group_198">
+            <field name="name">Утюг</field>
+        </record>
+
+        <record model="product.group" id="group_199">
+            <field name="name">Пылесос</field>
+        </record>
+
+        <record model="product.group" id="group_200">
+            <field name="name">Радиатор масляный</field>
+        </record>
+
+        <record model="product.group" id="group_201">
+            <field name="name">Воздухоочиститель</field>
+        </record>
+
+        <record model="product.group" id="group_202">
+            <field name="name">Увлажнитель воздуха</field>
+        </record>
+
+        <record model="product.group" id="group_203">
+            <field name="name">Одноразовая посуда</field>
+        </record>
+
+        <record model="product.group" id="group_204">
+            <field name="name">Столовая посуда</field>
+        </record>
+
+        <record model="product.group" id="group_205">
+            <field name="name">Столовые приборы</field>
+        </record>
+
+        <record model="product.group" id="group_206">
+            <field name="name">Скатерть</field>
+        </record>
+
+        <record model="product.group" id="group_207">
+            <field name="name">Зубочистки</field>
+        </record>
+
+        <record model="product.group" id="group_208">
+            <field name="name">Фольга пищевая</field>
+        </record>
+
+        <record model="product.group" id="group_209">
+            <field name="name">Платки носовые</field>
+        </record>
+
+        <record model="product.group" id="group_210">
+            <field name="name">Полотенца бумажные</field>
+        </record>
+
+        <record model="product.group" id="group_211">
+            <field name="name">Бумага туалетная</field>
+        </record>
+
+        <record model="product.group" id="group_212">
+            <field name="name">Покрытие</field>
+        </record>
+
+        <record model="product.group" id="group_213">
+            <field name="name">Мыло</field>
+        </record>
+
+        <record model="product.group" id="group_214">
+            <field name="name">Ср-во гигиены</field>
+        </record>
+
+        <record model="product.group" id="group_215">
+            <field name="name">Освежитель воздуха</field>
+        </record>
+
+        <record model="product.group" id="group_216">
+            <field name="name">Ср-во моющее/чистящее</field>
+        </record>
+
+        <record model="product.group" id="group_217">
+            <field name="name">Порошок стиральный</field>
+        </record>
+
+        <record model="product.group" id="group_218">
+            <field name="name">Ср-во д/обуви</field>
+        </record>
+
+        <record model="product.group" id="group_219">
+            <field name="name">Перчатки</field>
+        </record>
+
+        <record model="product.group" id="group_220">
+            <field name="name">Ерш д/туалета</field>
+        </record>
+
+        <record model="product.group" id="group_221">
+            <field name="name">Губка для мытья посуды</field>
+        </record>
+
+        <record model="product.group" id="group_222">
+            <field name="name">Ведро</field>
+        </record>
+
+        <record model="product.group" id="group_223">
+            <field name="name">Веник</field>
+        </record>
+
+        <record model="product.group" id="group_224">
+            <field name="name">Метла</field>
+        </record>
+
+        <record model="product.group" id="group_225">
+            <field name="name">Тележка</field>
+        </record>
+
+        <record model="product.group" id="group_226">
+            <field name="name">Насадка</field>
+        </record>
+
+        <record model="product.group" id="group_227">
+            <field name="name">Щетка</field>
+        </record>
+
+        <record model="product.group" id="group_228">
+            <field name="name">Совок</field>
+        </record>
+
+        <record model="product.group" id="group_229">
+            <field name="name">Урны, Контейнеры для мусора</field>
+        </record>
+
+        <record model="product.group" id="group_230">
+            <field name="name">Упаков.-полим.матер-лы</field>
+        </record>
+
+        <record model="product.group" id="group_231">
+            <field name="name">Стремянка</field>
+        </record>
+
+        <record model="product.group" id="group_232">
+            <field name="name">Рулетка</field>
+        </record>
+
+        <record model="product.group" id="group_233">
+            <field name="name">Изолента</field>
+        </record>
+
+        <record model="product.group" id="group_234">
+            <field name="name">Средства первой помощи</field>
+        </record>
+
+        <record model="product.group" id="group_235">
+            <field name="name">Спец.халат</field>
+        </record>
+
+        <record model="product.group" id="group_236">
+            <field name="name">Средство защиты глаз, лица</field>
+        </record>
+
+        <record model="product.group" id="group_237">
+            <field name="name">Средство защиты органов дыхания</field>
+        </record>
+
+        <record model="product.group" id="group_238">
+            <field name="name">Средство защиты органов слуха</field>
+        </record>
+
+        <record model="product.group" id="group_239">
+            <field name="name">Средство защиты рук</field>
+        </record>
+
+        <record model="product.group" id="group_240">
+            <field name="name">Диэлектрические средства</field>
+        </record>
+
+    </data>
+</tryton>
+

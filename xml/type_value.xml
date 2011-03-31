@@ -1,1 +1,47 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/type_value.xml
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ekd.product.template.property.type_value" id="type_value_text">
+            <field name="key">text</field>
+            <field name="name">Text</field>
+        </record>
+        <record model="ekd.product.template.property.type_value" id="type_value_numeric">
+            <field name="key">numeric</field>
+            <field name="name">Numeric</field>
+        </record>
+        <record model="ekd.product.template.property.type_value" id="type_value_integer">
+            <field name="key">integer</field>
+            <field name="name">Integer</field>
+        </record>
+        <record model="ekd.product.template.property.type_value" id="type_value_date">
+            <field name="key">date</field>
+            <field name="name">Date</field>
+        </record>
+        <record model="ekd.product.template.property.type_value" id="type_value_size">
+            <field name="key">size</field>
+            <field name="name">Size</field>
+        </record>
+        <record model="ekd.product.template.property.type_value" id="type_value_volume">
+            <field name="key">volume</field>
+            <field name="name">Volume</field>
+        </record>
+
+        <record model="ekd.product.template.property.type_value" id="type_value_weight">
+            <field name="key">weight</field>
+            <field name="name">Gross weight</field>
+        </record>
+
+        <record model="ekd.product.template.property.type_value" id="type_value_weight_net">
+            <field name="key">weight_net</field>
+            <field name="name">Net weight</field>
+        </record>
+
+        <record model="ekd.product.template.property.type_value" id="type_value_warranty">
+            <field name="key">warranty</field>
+            <field name="name">Warranty (months)</field>
+        </record>
+
+    </data>
+</tryton>

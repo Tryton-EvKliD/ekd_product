@@ -1,0 +1,552 @@
+type,name,res_id,src,value,fuzzy
+error,ekd.product.packing,0,"If the UOM is still not used, you can delete it otherwise you can deactivate it and create a new one.",,0
+error,ekd.product.packing,0,Invalid Factor and Rate values!,,0
+error,ekd.product.packing,0,Rate and factor can not be both equal to zero.,Ставка и фактор не может быть одновременно равны нулю.,0
+error,ekd.product.packing,0,"You cannot change Rate, Factor or Category on a Unit of Measure. ","Вы не можете изменить Курс, фактор или категорию на единицу измерения.",0
+error,ekd.product.template.packing,0,"If the UOM is still not used, you can delete it otherwise you can deactivate it and create a new one.",,0
+error,ekd.product.template.packing,0,Invalid Factor and Rate values!,,0
+error,ekd.product.template.packing,0,Rate and factor can not be both equal to zero.,Ставка и фактор не может быть одновременно равны нулю.,0
+error,ekd.product.template.packing,0,"You cannot change Rate, Factor or Category on a Unit of Measure. ","Вы не можете изменить Курс, фактор или категорию на единицу измерения.",0
+error,product.uom,0,Rate and factor can not be both equal to zero.,Ставка и фактор не может быть одновременно равны нулю.,0
+error,product.uom,0,"You cannot change Rate, Factor or Category on a Unit of Measure. ","Вы не можете изменить Курс, фактор или категорию на единицу измерения.",0
+field,"ekd.product.analogue,original",0,Product Original,,0
+field,"ekd.product.analogue,product",0,Product Analogue,,0
+field,"ekd.product.analogue,rec_name",0,Name,Наименование,0
+field,"ekd.product.packing,active",0,Active,Действующий,0
+field,"ekd.product.packing,childs",0,Child packing,,0
+field,"ekd.product.packing,digits",0,Display Digits,Кол-во знаков после запятой,0
+field,"ekd.product.packing,factor",0,Factor,Коэффициент к основной единице,0
+field,"ekd.product.packing,name",0,Name,Наименование,0
+field,"ekd.product.packing,parent",0,Parent packing,,0
+field,"ekd.product.packing,product",0,Product,ТМЦ,0
+field,"ekd.product.packing,rate",0,Rate,Ставка,0
+field,"ekd.product.packing,rec_name",0,Name,Наименование,0
+field,"ekd.product.packing,rounding",0,Rounding Precision,Точность округления,0
+field,"ekd.product.packing,sequence",0,Sequence,Последовательность,0
+field,"ekd.product.packing,symbol",0,Symbol,Условное обозначение,0
+field,"ekd.product.packing,volume",0,Volume,,0
+field,"ekd.product.packing,volume_uom",0,Volume UoM,,0
+field,"ekd.product.property,default_uom",0,UOM,,0
+field,"ekd.product.property,key",0,Property,Свойства,0
+field,"ekd.product.property,key_name",0,Property,Свойства,0
+field,"ekd.product.property,product",0,Product Template,Шаблон Товара,0
+field,"ekd.product.property,rec_name",0,Name,Наименование,0
+field,"ekd.product.property,type_value",0,Type Value,Тип значения,0
+field,"ekd.product.property,value",0,Value,Значение,0
+field,"ekd.product.template,active",0,Active,Действующий,0
+field,"ekd.product.template,category",0,Category,Категории,0
+field,"ekd.product.template,default_uom",0,Default UOM,По умолчанию ед.измерения,0
+field,"ekd.product.template,description",0,Description,Описание,0
+field,"ekd.product.template,group",0,Group,Группы,0
+field,"ekd.product.template,name",0,Name,Наименование,0
+field,"ekd.product.template,packing",0,Packing,,0
+field,"ekd.product.template,properties",0,Property,Свойства,0
+field,"ekd.product.template,rec_name",0,Name,Наименование,0
+field,"ekd.product.template,type",0,Type,Тип ставки,0
+field,"ekd.product.template.packing,active",0,Active,Действующий,0
+field,"ekd.product.template.packing,childs",0,Child packing,,0
+field,"ekd.product.template.packing,digits",0,Display Digits,Кол-во знаков после запятой,0
+field,"ekd.product.template.packing,factor",0,Factor,Коэффициент к основной единице,0
+field,"ekd.product.template.packing,name",0,Name,Наименование,0
+field,"ekd.product.template.packing,parent",0,Parent packing,,0
+field,"ekd.product.template.packing,rate",0,Rate,Ставка,0
+field,"ekd.product.template.packing,rec_name",0,Name,Наименование,0
+field,"ekd.product.template.packing,rounding",0,Rounding Precision,Точность округления,0
+field,"ekd.product.template.packing,sequence",0,Sequence,Последовательность,0
+field,"ekd.product.template.packing,symbol",0,Symbol,Условное обозначение,0
+field,"ekd.product.template.packing,template",0,Template product,,0
+field,"ekd.product.template.packing,volume",0,Volume Packaging,,0
+field,"ekd.product.template.packing,volume_uom",0,Volume UoM,,0
+field,"ekd.product.template.property,default_uom",0,UOM,,0
+field,"ekd.product.template.property,name",0,Property,Свойства,0
+field,"ekd.product.template.property,product",0,Product Template,Шаблон Товара,0
+field,"ekd.product.template.property,range",0,Range of Values,,0
+field,"ekd.product.template.property,rec_name",0,Name,Наименование,0
+field,"ekd.product.template.property,type_value",0,Type Value,Тип значения,0
+field,"ekd.product.template.property,value_default",0,Default Value,,0
+field,"ekd.product.template.property.type_value,key",0,Key Property,,0
+field,"ekd.product.template.property.type_value,name",0,Property,Свойства,0
+field,"ekd.product.template.property.type_value,rec_name",0,Name,Наименование,0
+field,"product,description",0,Description,Описание,0
+field,"product,property",0,Property,Свойства,0
+field,"product.category,childs",0,Children,Подчиненый,0
+field,"product.category,code",0,Code,Код,0
+field,"product.category,id_1c",0,ID import from 1C,,0
+field,"product.category,name",0,Name,Наименование,0
+field,"product.category,parent",0,Parent,Основной,0
+field,"product.category,rec_name",0,Name,Наименование,0
+field,"product.category,type",0,Type,Тип,0
+field,"product.fixed_assets,rec_name",0,Name,Наименование,0
+field,"product.fixed_assets,template",0,Product Template,Шаблон Товара,0
+field,"product.group,childs",0,Children,Подчиненый,0
+field,"product.group,code",0,Code,Код,0
+field,"product.group,code_full",0,Code,Код,0
+field,"product.group,id_1c",0,ID import from 1C,,0
+field,"product.group,name",0,Name,Наименование,0
+field,"product.group,parent",0,Parent,Основной,0
+field,"product.group,rec_name",0,Name,Наименование,0
+field,"product.grouping,group",0,Product Group,,0
+field,"product.grouping,product",0,Product Template,Шаблон Товара,0
+field,"product.grouping,rec_name",0,Name,Наименование,0
+field,"product.intangible_assets,rec_name",0,Name,Наименование,0
+field,"product.intangible_assets,template",0,Product Template,Шаблон Товара,0
+field,"product.material,rec_name",0,Name,Наименование,0
+field,"product.material,template",0,Product Template,Шаблон Товара,0
+field,"product.product,code",0,Code,Код,0
+field,"product.product,description",0,Description,Описание,0
+field,"product.product,id_1c",0,ID import from 1C,,0
+field,"product.product,properties",0,Property,Свойства,0
+field,"product.product,rec_name",0,Name,Наименование,0
+field,"product.product,template",0,Product Template,Шаблон Товара,0
+field,"product.template,active",0,Active,Действительнный,0
+field,"product.template,analogue",0,Product Analogue,,0
+field,"product.template,as_fixed",0,As Fixed Assets,Основное средство,0
+field,"product.template,as_goods",0,As Goods,,0
+field,"product.template,as_intangible",0,As Intangible Assets,Нематериальный актив,0
+field,"product.template,as_material",0,As Material,Материал,0
+field,"product.template,category",0,Category,Категории,0
+field,"product.template,cost_price",0,Cost Price,Покупная цена,0
+field,"product.template,cost_price_method",0,Cost Method,Затратный метод,0
+field,"product.template,cost_price_uom",0,Cost Price,Цена за единицу,0
+field,"product.template,default_uom",0,Default UOM,По умолчанию ед.измерения,0
+field,"product.template,group",0,Group,Группы,0
+field,"product.template,list_price",0,List Price,Прайс-лист,0
+field,"product.template,list_price_uom",0,List Price,Прайс-лист,0
+field,"product.template,name",0,Name,Наименование,0
+field,"product.template,packing",0,Packing,,0
+field,"product.template,product_template",0,Product Template,Шаблон Товара,0
+field,"product.template,products",0,Products,ТМЦ,0
+field,"product.template,properties",0,Property,Свойства,0
+field,"product.template,rec_name",0,Name,Наименование,0
+field,"product.template,type",0,Type,Тип,0
+field,"product.uom,active",0,Active,Действительнный,0
+field,"product.uom,category",0,UOM Category,Категория Ед.изм.,0
+field,"product.uom,digits",0,Display Digits,Кол-во знаков после запятой,0
+field,"product.uom,factor",0,Factor,Коэффициент к основной единице,0
+field,"product.uom,name",0,Name,Наименование,0
+field,"product.uom,rate",0,Rate,Коэфициент основной единицы,0
+field,"product.uom,rec_name",0,Name,Наименование,0
+field,"product.uom,rounding",0,Rounding Precision,Точность округления,0
+field,"product.uom,symbol",0,Symbol,Условное обозначение,0
+field,"product.uom.category,name",0,Name,Наименование,0
+field,"product.uom.category,rec_name",0,Name,Наименование,0
+field,"product.uom.category,uoms",0,Unit of Measures,Единица измерений,0
+help,"ekd.product.packing,factor",0,"The coefficient for the formula:
+coef (base unit) = 1 (this unit)","Коэффициент по формуле:
+коэффициент в этом поле (базовая единица) = 1 (этой ед. измерения)",0
+help,"ekd.product.packing,rate",0,"The coefficient for the formula:
+1 (base unit) = coef (this unit)","Коэффициент по формуле:
+1 (базовая единица) = коэффициенту (этой ед.измерения)",0
+help,"ekd.product.packing,volume",0,Length x Width x Height,,0
+help,"ekd.product.template.packing,factor",0,"The coefficient for the formula:
+coef (base unit) = 1 (this unit)","Коэффициент по формуле:
+коэффициент в этом поле (базовая единица) = 1 (этой ед. измерения)",0
+help,"ekd.product.template.packing,rate",0,"The coefficient for the formula:
+1 (base unit) = coef (this unit)","Коэффициент по формуле:
+1 (базовая единица) = коэффициенту (этой ед.измерения)",0
+help,"ekd.product.template.packing,volume",0,Length x Width x Height,,0
+help,"product.uom,factor",0,"The coefficient for the formula:
+coef (base unit) = 1 (this unit)","Коэффициент по формуле:
+коэффициент в этом поле (базовая единица) = 1 (этой ед. измерения)",0
+help,"product.uom,rate",0,"The coefficient for the formula:
+1 (base unit) = coef (this unit)","Коэффициент по формуле:
+1 (базовая единица) = коэффициенту (этой ед.измерения)",0
+model,"ekd.product.analogue,name",0,Product Analogue,,0
+model,"ekd.product.packing,name",0,Unit of measure Packing,,0
+model,"ekd.product.property,name",0,Product Property,,0
+model,"ekd.product.template,name",0,ekd.product.template,Шаблон Товара,0
+model,"ekd.product.template.packing,name",0,Unit of measure Packing Template,,0
+model,"ekd.product.template.property,name",0,Product Template Property,,0
+model,"ekd.product.template.property.type_value,name",0,Property Type Value,,0
+model,"ekd.product.template.property.type_value,name",type_value_date,Date,Дата,0
+model,"ekd.product.template.property.type_value,name",type_value_integer,Integer,,0
+model,"ekd.product.template.property.type_value,name",type_value_numeric,Numeric,,0
+model,"ekd.product.template.property.type_value,name",type_value_size,Size,,0
+model,"ekd.product.template.property.type_value,name",type_value_text,Text,,0
+model,"ekd.product.template.property.type_value,name",type_value_volume,Volume,,0
+model,"ekd.product.template.property.type_value,name",type_value_warranty,Warranty (months),,0
+model,"ekd.product.template.property.type_value,name",type_value_weight,Gross weight,,0
+model,"ekd.product.template.property.type_value,name",type_value_weight_net,Net weight,,0
+model,"ir.action,name",act_group_form,Product Groups,,0
+model,"ir.action,name",act_group_form2,Product Groups,,0
+model,"ir.action,name",act_group_tree,Groups,Группы,0
+model,"ir.action,name",act_product_template_form,Product Templates,Шаблоны Товара,0
+model,"ir.action,name",act_product_template_form2,Product Templates,Шаблоны Товара,0
+model,"ir.ui.menu,name",menu_group_form,Groups,Группы,0
+model,"ir.ui.menu,name",menu_group_form_new,New group,,0
+model,"ir.ui.menu,name",menu_group_tree,Groups,Группы,0
+model,"ir.ui.menu,name",menu_product_template_form,Product template,,0
+model,"ir.ui.menu,name",menu_product_template_form_new,New product template,,0
+model,"product.category,name",0,Product Category,Категории ТМЦ,0
+model,"product.category,name",cat_1,Расходные материалы для оргтехники,,0
+model,"product.category,name",cat_10,Офисная мебель,,0
+model,"product.category,name",cat_10_1,Офисная мебель для руководителя,,0
+model,"product.category,name",cat_10_10,Аптечки,,0
+model,"product.category,name",cat_10_11,"Кэшбоксы, ящики для ключей",,0
+model,"product.category,name",cat_10_12,Вешалки,,0
+model,"product.category,name",cat_10_13,Часы настенные,,0
+model,"product.category,name",cat_10_2,Офисная мебель для персонала,,0
+model,"product.category,name",cat_10_3,Компьютерные столы,,0
+model,"product.category,name",cat_10_4,Компьютерные кресла,,0
+model,"product.category,name",cat_10_5,"Кресла, стулья",,0
+model,"product.category,name",cat_10_6,Мягкая мебель,,0
+model,"product.category,name",cat_10_7,Аксессуары,,0
+model,"product.category,name",cat_10_8,Металлическая мебель,,0
+model,"product.category,name",cat_10_9,Сейфы,,0
+model,"product.category,name",cat_11,Продукты питания,,0
+model,"product.category,name",cat_11_1,Чай,,0
+model,"product.category,name",cat_11_2,Кофе,,0
+model,"product.category,name",cat_11_3,"Молоко, сливки, сахар",,0
+model,"product.category,name",cat_11_4,Кондитерские изделия,,0
+model,"product.category,name",cat_11_5,Орехи и сухофрукты,,0
+model,"product.category,name",cat_11_6,"Вода, соки, напитки",,0
+model,"product.category,name",cat_12,Бытовая техника,,0
+model,"product.category,name",cat_12_1,Чайники,,0
+model,"product.category,name",cat_12_10,Климатическая техника,,0
+model,"product.category,name",cat_12_2,Кофемашины,,0
+model,"product.category,name",cat_12_3,Кофеварки,,0
+model,"product.category,name",cat_12_4,Микроволновые печи,,0
+model,"product.category,name",cat_12_5,Фильтры для воды,,0
+model,"product.category,name",cat_12_6,Холодильники,,0
+model,"product.category,name",cat_12_7,Тостеры,,0
+model,"product.category,name",cat_12_8,Утюги,,0
+model,"product.category,name",cat_12_9,Пылесосы,,0
+model,"product.category,name",cat_13,Хозяйственные товары для офиса,,0
+model,"product.category,name",cat_13_1,Посуда,,0
+model,"product.category,name",cat_13_10,Средства для ухода за обувью и одеждой,,0
+model,"product.category,name",cat_13_11,Входные ковры,,0
+model,"product.category,name",cat_13_12,Уборочный инвентарь,,0
+model,"product.category,name",cat_13_13,Корзины для мусора,,0
+model,"product.category,name",cat_13_14,Пакеты для мусора,,0
+model,"product.category,name",cat_13_15,Стремянки,,0
+model,"product.category,name",cat_13_16,Хозяйственные товары,,0
+model,"product.category,name",cat_13_17,Средства для первой помощи,,0
+model,"product.category,name",cat_13_18,Одежда для работников сферы обслуживания,,0
+model,"product.category,name",cat_13_19,Средства для защиты глаз,,0
+model,"product.category,name",cat_13_2,Скатерти и салфетки,,0
+model,"product.category,name",cat_13_20,Средства для защиты органов дыхания,,0
+model,"product.category,name",cat_13_21,Средства защиты органов слуха,,0
+model,"product.category,name",cat_13_22,Диэлектрические средства защиты,,0
+model,"product.category,name",cat_13_23,Средства защиты рук,,0
+model,"product.category,name",cat_13_24,Упаковочные материалы,,0
+model,"product.category,name",cat_13_3,Гигиенические товары,,0
+model,"product.category,name",cat_13_4,"Мыло, крем для рук",,0
+model,"product.category,name",cat_13_5,Освежители воздуха,,0
+model,"product.category,name",cat_13_6,Моющие средства для посуды,,0
+model,"product.category,name",cat_13_7,"Стиральные порошки, отбеливатели, кондиционеры",,0
+model,"product.category,name",cat_13_8,Чистящие и моющие средства,,0
+model,"product.category,name",cat_13_9,Клей хозяйственный,,0
+model,"product.category,name",cat_1_1,Картриджи для лазерных принтеров,,0
+model,"product.category,name",cat_1_2,Расходные материалы для копировальных аппаратов,,0
+model,"product.category,name",cat_1_3,Расходные материалы для этикет-принтеров,,0
+model,"product.category,name",cat_1_4,Картриджи для струйных принтеров,,0
+model,"product.category,name",cat_1_5,Картриджи для факсимильных аппаратов,,0
+model,"product.category,name",cat_1_6,Картриджи для кассовых аппаратов,,0
+model,"product.category,name",cat_1_7,Картриджи для калькуляторов,,0
+model,"product.category,name",cat_1_8,Картриджи для матричных принтеров,,0
+model,"product.category,name",cat_2,Бумага и бумажная продукция,,0
+model,"product.category,name",cat_2_1,Бумага для офисного оборудования,,0
+model,"product.category,name",cat_2_10,Бумага для инженерных и копировальных работ,,0
+model,"product.category,name",cat_2_11,"Конверты, пакеты",,0
+model,"product.category,name",cat_2_12,"Бухгалтерские бланки, книги",,0
+model,"product.category,name",cat_2_13,Бумага для заметок,,0
+model,"product.category,name",cat_2_14,Тетради и блокноты,,0
+model,"product.category,name",cat_2_15,Бумага для творчества,,0
+model,"product.category,name",cat_2_16,Ежедневники,,0
+model,"product.category,name",cat_2_17,Алфавитные книги,,0
+model,"product.category,name",cat_2_18,Визитницы,,0
+model,"product.category,name",cat_2_19,"Грамоты, дипломы, адресные папки",,0
+model,"product.category,name",cat_2_2,Бумага писчая,,0
+model,"product.category,name",cat_2_3,Бумага цветная,,0
+model,"product.category,name",cat_2_4,Бумага для полноцветной печати,,0
+model,"product.category,name",cat_2_5,Бумага для струйной печати,,0
+model,"product.category,name",cat_2_6,Бумага для плоттеров,,0
+model,"product.category,name",cat_2_7,Самоклеящие этикетки,,0
+model,"product.category,name",cat_2_8,Перфорированная бумага,,0
+model,"product.category,name",cat_2_9,Ролики,,0
+model,"product.category,name",cat_3,"Папки, системы архивации документов",,0
+model,"product.category,name",cat_3_1,Папки-регистраторы с арочным механизмом,,0
+model,"product.category,name",cat_3_10,Папки на резинках,,0
+model,"product.category,name",cat_3_11,Папки пластиковые,,0
+model,"product.category,name",cat_3_12,Папки-портфели пластиковые,,0
+model,"product.category,name",cat_3_13,Папки архивные,,0
+model,"product.category,name",cat_3_14,Подвесная регистратура,,0
+model,"product.category,name",cat_3_15,Планшеты,,0
+model,"product.category,name",cat_3_2,Папки на кольцах,,0
+model,"product.category,name",cat_3_3,Разделители листов,,0
+model,"product.category,name",cat_3_4,Механизмы для скоросшивателя,,0
+model,"product.category,name",cat_3_5,Самоклеящиеся карманы,,0
+model,"product.category,name",cat_3_6,Скоросшиватели,,0
+model,"product.category,name",cat_3_7,"Папки с прижимом, клипом",,0
+model,"product.category,name",cat_3_8,Файлы-вкладыши,,0
+model,"product.category,name",cat_3_9,Папки файловые,,0
+model,"product.category,name",cat_4,Письменные и чертежные принадлежности,,0
+model,"product.category,name",cat_4_1,Наборы пишущих принадлежностей,,0
+model,"product.category,name",cat_4_10,Карандаши,,0
+model,"product.category,name",cat_4_11,Ластики,,0
+model,"product.category,name",cat_4_12,Точилки,,0
+model,"product.category,name",cat_4_13,"Чернила, стержни, краски",,0
+model,"product.category,name",cat_4_14,Чертежные принадлежности,,0
+model,"product.category,name",cat_4_2,Футляры для пишущих принадлежностей,,0
+model,"product.category,name",cat_4_3,Ручки перьевые,,0
+model,"product.category,name",cat_4_4,Ручки шариковые,,0
+model,"product.category,name",cat_4_5,Ручки гелевые,,0
+model,"product.category,name",cat_4_6,Роллеры,,0
+model,"product.category,name",cat_4_7,Линеры,,0
+model,"product.category,name",cat_4_8,Маркеры,,0
+model,"product.category,name",cat_4_9,Фломастеры,,0
+model,"product.category,name",cat_5,Офисные принадлежности,,0
+model,"product.category,name",cat_5_1,Настольные наборы,,0
+model,"product.category,name",cat_5_10,Антистеплеры,,0
+model,"product.category,name",cat_5_11,Кнопки,,0
+model,"product.category,name",cat_5_12,Скрепки,,0
+model,"product.category,name",cat_5_13,Зажимы для бумаг,,0
+model,"product.category,name",cat_5_14,Настольные аксессуары,,0
+model,"product.category,name",cat_5_15,Клейкие ленты,,0
+model,"product.category,name",cat_5_16,Клей,,0
+model,"product.category,name",cat_5_17,Ножницы,,0
+model,"product.category,name",cat_5_18,Ножи канцелярские,,0
+model,"product.category,name",cat_5_19,Корректирующие жидкости,,0
+model,"product.category,name",cat_5_2,Подставки,,0
+model,"product.category,name",cat_5_20,Штемпельная продукция,,0
+model,"product.category,name",cat_5_3,Коврики на стол,,0
+model,"product.category,name",cat_5_4,Лотки для бумаг,,0
+model,"product.category,name",cat_5_5,Вертикальные накопители,,0
+model,"product.category,name",cat_5_6,Картотеки,,0
+model,"product.category,name",cat_5_7,Дыроколы,,0
+model,"product.category,name",cat_5_8,Степлеры,,0
+model,"product.category,name",cat_5_9,Скобы для степлеров,,0
+model,"product.category,name",cat_6,Бизнес-аксессуары,,0
+model,"product.category,name",cat_6_1,Кейсы и портфели,,0
+model,"product.category,name",cat_6_2,Папки деловые,,0
+model,"product.category,name",cat_6_3,Папки адресные,,0
+model,"product.category,name",cat_6_4,Дорожные аксессуары,,0
+model,"product.category,name",cat_6_5,Галантерея,,0
+model,"product.category,name",cat_6_6,Визитницы,,0
+model,"product.category,name",cat_7,Демонстрационное оборудование,,0
+model,"product.category,name",cat_7_1,Проекторы,,0
+model,"product.category,name",cat_7_10,"Таблички, подставки",,0
+model,"product.category,name",cat_7_11,Бейджи,,0
+model,"product.category,name",cat_7_2,Экраны для проекторов,,0
+model,"product.category,name",cat_7_3,Пленки для проекторов,,0
+model,"product.category,name",cat_7_4,Демонстрационное оборудование,,0
+model,"product.category,name",cat_7_5,Флипчарты,,0
+model,"product.category,name",cat_7_6,Аксессурары для досок,,0
+model,"product.category,name",cat_7_7,Доски для информации,,0
+model,"product.category,name",cat_7_8,Атласы,,0
+model,"product.category,name",cat_7_9,Настенные карты,,0
+model,"product.category,name",cat_8,Офисная техника,,0
+model,"product.category,name",cat_8_1,Калькуляторы,,0
+model,"product.category,name",cat_8_10,Резаки для бумаг,,0
+model,"product.category,name",cat_8_11,Уничтожители документов,,0
+model,"product.category,name",cat_8_12,Оборудование для переплета и ламинирования,,0
+model,"product.category,name",cat_8_13,Банковское оборудование,,0
+model,"product.category,name",cat_8_14,Светильники,,0
+model,"product.category,name",cat_8_15,"Сетевые фильтры, удлинители",,0
+model,"product.category,name",cat_8_16,Лампы электрические,,0
+model,"product.category,name",cat_8_17,Фонари,,0
+model,"product.category,name",cat_8_18,Элементы питания,,0
+model,"product.category,name",cat_8_19,Торговое оборудование,,0
+model,"product.category,name",cat_8_2,Телефоны,,0
+model,"product.category,name",cat_8_3,Факсимильные аппараты,,0
+model,"product.category,name",cat_8_4,"Диктофоны, MP3-плееры",,0
+model,"product.category,name",cat_8_5,Фотоаппараты,,0
+model,"product.category,name",cat_8_6,Многофункциональные устройства,,0
+model,"product.category,name",cat_8_7,Принтеры,,0
+model,"product.category,name",cat_8_8,Копировальные аппараты,,0
+model,"product.category,name",cat_8_9,Сканеры,,0
+model,"product.category,name",cat_9,Компьютеры и компьютерные аксессуары,,0
+model,"product.category,name",cat_9_1,Ноутбуки,,0
+model,"product.category,name",cat_9_10,Носители информации,,0
+model,"product.category,name",cat_9_11,Боксы для дискет,,0
+model,"product.category,name",cat_9_12,"Стойки, коробки для CD/DVD-дисков",,0
+model,"product.category,name",cat_9_13,Портмоне для CD/DVD-дисков,,0
+model,"product.category,name",cat_9_14,Чехлы и сумки,,0
+model,"product.category,name",cat_9_15,Средства для чистки оргтехники,,0
+model,"product.category,name",cat_9_2,Мониторы,,0
+model,"product.category,name",cat_9_3,Сумки для ноутбуков,,0
+model,"product.category,name",cat_9_4,Компьютерные аксессуары,,0
+model,"product.category,name",cat_9_5,Клавиатуры,,0
+model,"product.category,name",cat_9_6,Мыши компьютерные,,0
+model,"product.category,name",cat_9_7,Коврики для мыши,,0
+model,"product.category,name",cat_9_8,Подставки под оргтехнику,,0
+model,"product.category,name",cat_9_9,Держатели для бумаг,,0
+model,"product.fixed_assets,name",0,Product Fixed Assets,,0
+model,"product.group,name",0,Product Group,,0
+model,"product.group,name",group_10,Писчая бумага,,0
+model,"product.group,name",group_100,Штрих,,0
+model,"product.group,name",group_101,Разбавитель,,0
+model,"product.group,name",group_102,Штемпельная прод-ия,,0
+model,"product.group,name",group_103,Галантерея,,0
+model,"product.group,name",group_104,Папка из кожи и к/з,,0
+model,"product.group,name",group_105,Обложка,,0
+model,"product.group,name",group_106,Проектор,,0
+model,"product.group,name",group_107,Экран,,0
+model,"product.group,name",group_108,Пленка для проекторов,,0
+model,"product.group,name",group_109,Демо-система,,0
+model,"product.group,name",group_110,Рамка,,0
+model,"product.group,name",group_111,Держатель,,0
+model,"product.group,name",group_112,Офисная техника,,0
+model,"product.group,name",group_113,Настенные карты,,0
+model,"product.group,name",group_114,Атлас,,0
+model,"product.group,name",group_115,Информационное оборудование,,0
+model,"product.group,name",group_116,Мебель,,0
+model,"product.group,name",group_117,Убороч. инвентарь,,0
+model,"product.group,name",group_118,Бейдж,,0
+model,"product.group,name",group_119,Калькулятор,,0
+model,"product.group,name",group_12,Бумага для полноцв.лазер.печ.,,0
+model,"product.group,name",group_120,Телефон,,0
+model,"product.group,name",group_121,Телефакс,,0
+model,"product.group,name",group_122,Диктофон цифровой,,0
+model,"product.group,name",group_123,Фотоаппарат,,0
+model,"product.group,name",group_124,Копир офисный,,0
+model,"product.group,name",group_125,Многофункциональное устройство,,0
+model,"product.group,name",group_126,Принтер,,0
+model,"product.group,name",group_127,Кабель,,0
+model,"product.group,name",group_128,Сканер,,0
+model,"product.group,name",group_129,Резак д/бумаги,,0
+model,"product.group,name",group_13,Бумага для полноцв.струй.печ.,,0
+model,"product.group,name",group_130,Уничтожитель док-ов,,0
+model,"product.group,name",group_131,Брошюровщик,,0
+model,"product.group,name",group_132,Ламинатор,,0
+model,"product.group,name",group_133,Расх.мат.д/переп. и ламин.,,0
+model,"product.group,name",group_134,Счетчик банкнот,,0
+model,"product.group,name",group_135,Пломбиратор,,0
+model,"product.group,name",group_136,Сумка,,0
+model,"product.group,name",group_137,Пломба,,0
+model,"product.group,name",group_139,Пенал,,0
+model,"product.group,name",group_140,Банковское оборуд-ие,,0
+model,"product.group,name",group_142,Набор инкассаторский,,0
+model,"product.group,name",group_143,Кольцо бандерольное,,0
+model,"product.group,name",group_145,Накладка,,0
+model,"product.group,name",group_146,Лампа,,0
+model,"product.group,name",group_15,Самокл. этикетки,,0
+model,"product.group,name",group_152,Сумка для ноутбука,,0
+model,"product.group,name",group_153,Гарнитура,,0
+model,"product.group,name",group_160,Картридер,,0
+model,"product.group,name",group_163,Коврик д/мыши,,0
+model,"product.group,name",group_165,Держатель для бумаг,,0
+model,"product.group,name",group_167,Карта памяти,,0
+model,"product.group,name",group_17,Этикетки самоклеящиеся,,0
+model,"product.group,name",group_177,Спрей для чистки оптики,,0
+model,"product.group,name",group_18,Самокоп.непрер.компьютерная бумага,,0
+model,"product.group,name",group_181,СпецМеб,,0
+model,"product.group,name",group_182,Вешалка,,0
+model,"product.group,name",group_186,Кофе,,0
+model,"product.group,name",group_189,Бакалея,,0
+model,"product.group,name",group_193,Кофемашина,,0
+model,"product.group,name",group_198,Утюг,,0
+model,"product.group,name",group_2,Картридж к Label принтеру,,0
+model,"product.group,name",group_21,Ролики для телетайпов,,0
+model,"product.group,name",group_211,Бумага туалетная,,0
+model,"product.group,name",group_221,Губка для мытья посуды,,0
+model,"product.group,name",group_226,Насадка,,0
+model,"product.group,name",group_233,Изолента,,0
+model,"product.group,name",group_234,Средства первой помощи,,0
+model,"product.group,name",group_239,Средство защиты рук,,0
+model,"product.group,name",group_31,Бух брошюры,,0
+model,"product.group,name",group_33,Клейкие закладки,,0
+model,"product.group,name",group_34,Диспенсер для закладок,,0
+model,"product.group,name",group_40,Сезонный набор,,0
+model,"product.group,name",group_46,Архивные системы,,0
+model,"product.group,name",group_47,Подвесная регистратура,,0
+model,"product.group,name",group_5,Картридж струйный,,0
+model,"product.group,name",group_52,Футляр для ручек,,0
+model,"product.group,name",group_53,Ручка,,0
+model,"product.group,name",group_54,Роллер,,0
+model,"product.group,name",group_55,Линер,,0
+model,"product.group,name",group_56,Маркер,,0
+model,"product.group,name",group_57,Фломастер,,0
+model,"product.group,name",group_58,Карандаш,,0
+model,"product.group,name",group_59,Ластик,,0
+model,"product.group,name",group_60,Точилка,,0
+model,"product.group,name",group_61,Стержень микрограф,,0
+model,"product.group,name",group_62,Тушь,,0
+model,"product.group,name",group_63,Пластилин,,0
+model,"product.group,name",group_64,Краски,,0
+model,"product.group,name",group_65,Мел,,0
+model,"product.group,name",group_66,Линейка,,0
+model,"product.group,name",group_67,Доска д/информации,,0
+model,"product.group,name",group_68,Тубус,,0
+model,"product.group,name",group_69,Готовальня,,0
+model,"product.group,name",group_70,Набор настольный,,0
+model,"product.group,name",group_71,Диспенсер для клейкой ленты,,0
+model,"product.group,name",group_72,Скрепочница,,0
+model,"product.group,name",group_73,Подставка,,0
+model,"product.group,name",group_74,Корзина,,0
+model,"product.group,name",group_75,Степлер,,0
+model,"product.group,name",group_76,Вертикальный накопитель,,0
+model,"product.group,name",group_77,Дырокол,,0
+model,"product.group,name",group_78,Лоток для бумаг,,0
+model,"product.group,name",group_79,Бокс с выдвижными лотками,,0
+model,"product.group,name",group_80,"Набор класса ""Люкс""",,0
+model,"product.group,name",group_81,Коврик на стол,,0
+model,"product.group,name",group_82,Сувенир,,0
+model,"product.group,name",group_83,Картотека,,0
+model,"product.group,name",group_84,Клейкая лента,,0
+model,"product.group,name",group_85,Лотки,,0
+model,"product.group,name",group_86,Глобус,,0
+model,"product.group,name",group_87,Степлеры/дыроколы,,0
+model,"product.group,name",group_88,Скобы к степлеру,,0
+model,"product.group,name",group_89,Анти-степлер,,0
+model,"product.group,name",group_90,Аксессуары для досок,,0
+model,"product.group,name",group_91,Кнопки,,0
+model,"product.group,name",group_92,Булавки,,0
+model,"product.group,name",group_93,Зажим для бумаг,,0
+model,"product.group,name",group_94,Резинка,,0
+model,"product.group,name",group_95,Подушка для смачивания пальцев,,0
+model,"product.group,name",group_96,Лупа,,0
+model,"product.group,name",group_97,Клей,,0
+model,"product.group,name",group_98,Ножницы,,0
+model,"product.group,name",group_99,Нож канцелярский,,0
+model,"product.grouping,name",0,product.grouping,,0
+model,"product.intangible_assets,name",0,Product Intangible Assets,,0
+model,"product.material,name",0,Product Material,,0
+model,"product.product,name",0,Product,ТМЦ,0
+model,"product.template,name",0,product.template,Шаблон Товара,0
+model,"product.uom,name",0,Unit of measure,Единица измерения,0
+model,"product.uom.category,name",0,Product uom category,Категории ед.измерения товара,0
+selection,"ekd.product.template,type",0,Consumable,Расходные,0
+selection,"ekd.product.template,type",0,Container,,0
+selection,"ekd.product.template,type",0,Exploited,Эксплуатируемый,0
+selection,"ekd.product.template,type",0,Service,Услуги,0
+selection,"ekd.product.template,type",0,Stockable,Можно хранить,0
+selection,"product.category,type",0,Fixed Assets,Основные средства,0
+selection,"product.category,type",0,Goods,Товары,0
+selection,"product.category,type",0,Intangible assets,Нематериальные активы,0
+selection,"product.category,type",0,Material,Материалы,0
+selection,"product.category,type",0,Service,Услуги,0
+selection,"product.category,type",0,View,Просмотр,0
+selection,"product.template,cost_price_method",0,Average,Средняя цена,0
+selection,"product.template,cost_price_method",0,Fixed,Учетная цена,0
+selection,"product.template,type",0,Consumable,Расходные,0
+selection,"product.template,type",0,Container,,0
+selection,"product.template,type",0,Exploited,Эксплуатируемый,0
+selection,"product.template,type",0,Service,Услуги,0
+selection,"product.template,type",0,Stockable,Можно хранить,0
+view,ekd.product.template,0,Packing,,0
+view,ekd.product.template,0,Packing and Grouping,,0
+view,ekd.product.template,0,Packing product,,0
+view,ekd.product.template,0,Product Categories,Категория ТМЦ,0
+view,ekd.product.template,0,Product Template,Шаблон Товара,0
+view,ekd.product.template,0,Property,Свойства,0
+view,ekd.product.template,0,Units of Measure,Единицы измерения,0
+view,product.category,0,Children,Подчиненый,0
+view,product.category,0,Product Categories,Категория ТМЦ,0
+view,product.category,0,Product Category,Категории ТМЦ,0
+view,product.group,0,Children,Подчиненый,0
+view,product.group,0,Product Categories,Категория ТМЦ,0
+view,product.group,0,Product group,,0
+view,product.product,0,Analogue,,0
+view,product.product,0,Grouping and Packing,,0
+view,product.product,0,Packing,,0
+view,product.product,0,Packing product,,0
+view,product.product,0,Products,ТМЦ,0
+view,product.product,0,Units of Measure,Единицы измерения,0
+view,product.template,0,General,Основной,0
+view,product.template,0,Product Template,Шаблон Товара,0
+view,product.template,0,Product Templates,Шаблоны Товара,0
+view,product.uom,0,Unit of Measure,Единица измерения,0
+view,product.uom,0,Units of Measure,Единицы измерения,0
+view,product.uom.category,0,Categories of Unit of Measure,Категория ед.измерения,0
+view,product.uom.category,0,Category of Unit of Measure,Категории ед.измерения,0

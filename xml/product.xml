@@ -1,1 +1,143 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/product.xml
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <menuitem name="Product" id="product.menu_main_product" sequence="1"
+            parent="ekd_system.menu_diction" icon="tryton-package"/>
+
+        <record model="ir.ui.view" id="template_view_tree">
+            <field name="model">product.template</field>
+            <field name="type">tree</field>
+            <field name="inherit" ref="product.template_view_tree"/>
+            <field name="arch" type="xml">
+            <![CDATA[
+                <data>
+                <xpath
+                    expr="/tree/field[@name=&quot;list_price_uom&quot;]"
+                    position="after">
+                        <field name="group" select="1"/>
+                </xpath>
+                <xpath
+                    expr="/tree/field[@name=&quot;cost_price_uom&quot;]"
+                    position="after">
+                        <field name="properties" tree_invisible="1" select="1"/>
+                </xpath>
+                </data>
+            ]]>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_view_form_ext">
+            <field name="model">product.product</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="product.product_view_form"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                <xpath
+                    expr="/form/notebook/page[@id=&quot;general&quot;]/field[@name=&quot;default_uom&quot;]"
+                    position="after">
+                    <label name="product_template"/>
+                    <field name="product_template"/>
+                    <newline/>
+                </xpath>
+                <xpath
+                    expr="/form/label[@name=&quot;active&quot;]"
+                    position="after">
+                    <group colspan="2" col="20" id="checkboxes">
+                        <label name="as_material"/>
+                        <field name="as_material"
+                            xexpand="0" width="25"/>
+                        <label name="as_fixed"/>
+                        <field name="as_fixed"
+                            xexpand="0" width="25"/>
+                        <label name="as_intangible"/>
+                        <field name="as_intangible"
+                            xexpand="0" width="25"/>
+                        <label name="as_goods"/>
+                        <field name="as_goods"
+                            xexpand="0" width="25"/>
+                        <!-- Add here some checkboxes ! -->
+                    </group>
+                </xpath>
+                <xpath
+                    expr="/form/notebook/page[@id=&quot;general&quot;]/field[@name=&quot;description&quot;]"
+                    position="replace">
+                        <field name="description" colspan="2"/>
+                        <field name="properties" mode="tree" colspan="2">
+                            <tree>
+                                <field name="type_value"/>
+                                <field name="key"/>
+                                <field name="value"/>
+                                <field name="default_uom"/>
+                            </tree>
+                            <form>
+                                <label name="key_name"/>
+                                <field name="key_name"/>
+                                <label name="key"/>
+                                <field name="key"/>
+                                <label name="value"/>
+                                <field name="value"/>
+                                <label name="default_uom"/>
+                                <field name="default_uom"/>
+                                <label name="type_value"/>
+                                <field name="type_value"/>
+                            </form>
+                         </field>
+                    <newline/>
+                </xpath>
+                <xpath
+                    expr="/form/notebook/page[@id=&quot;general&quot;]"
+                    position="after">
+                        <page string="Grouping and Packing" col="4" id="packing">
+                            <field name="group"/>
+                            <field name="packing">
+                                <tree string="Units of Measure">
+                                    <field name="name"/>
+                                    <field name="symbol"/>
+                                    <field name="parent"/>
+                                    <field name="factor" />
+                                    <field name="rate" />
+                                    <field name="rounding"/>
+                                    <field name="active" tree_invisible="1"/>
+                                </tree>
+                                <form string="Packing product" col="4">
+                                    <group colspan="4" id="head">
+                                        <label name="name"/>
+                                        <field name="name"/>
+                                        <label name="parent"/>
+                                        <field name="parent"/>
+                                        <label name="symbol"/>
+                                        <field name="symbol"/>
+                                        <label name="active"/>
+                                        <field name="active"/>
+                                        <label name="factor"/>
+                                        <field name="factor"/>
+                                        <label name="rate"/>
+                                        <field name="rate"/>
+                                        <label name="rounding"/>
+                                        <field name="rounding"/>
+                                        <label name="digits"/>
+                                        <field name="digits"/>
+                                        <label name="volume"/>
+                                        <field name="volume"/>
+                                        <label name="volume_uom"/>
+                                        <field name="volume_uom"/>
+                                    </group>
+                                    <field name="childs"/>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Analogue" col="4" id="analogue">
+                            <field name="analogue"/>
+                        </page>
+                </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</tryton>

@@ -1,1 +1,165 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/product_template.xml
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="product_template_view_tree">
+            <field name="model">ekd.product.template</field>
+            <field name="type">tree</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Product Categories">
+                    <field name="name" select="1"/>
+                    <field name="category" select="1"/>
+                    <field name="group" select="1"/>
+                    <field name="type" select="1"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="product_template_view_form">
+            <field name="model">ekd.product.template</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Product Template">
+                    <label name="name"/>
+                    <field name="name"/>
+                    <label name="type"/>
+                    <field name="type"/>
+                    <label name="category"/>
+                    <field name="category"/>
+                    <label name="default_uom"/>
+                    <field name="default_uom"/>
+                    <label name="active"/>
+                    <field name="active"/>
+                    <newline/>
+                    <notebook colspan="4">
+                        <page string="Property" col="4" id="childs">
+                            <separator name="description" colspan="4"/>
+                            <field name="description"/>
+                            <field name="properties">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="range"/>
+                                    <field name="value_default"/>
+                                    <field name="default_uom"/>
+                                    <field name="type_value"/>
+                                </tree>
+                                <form>
+                                    <label name="name"/>
+                                    <field name="name"/>
+                                    <label name="value_default"/>
+                                    <field name="value_default"/>
+                                    <label name="type_value"/>
+                                    <field name="type_value"/>
+                                    <label name="range"/>
+                                    <field name="range"/>
+                                    <label name="default_uom"/>
+                                    <field name="default_uom"/>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Packing and Grouping" col="4" id="packing">
+                            <field name="group"/>
+                            <field name="packing">
+                                <tree string="Units of Measure">
+                                    <field name="name"/>
+                                    <field name="symbol"/>
+                                    <field name="parent"/>
+                                    <field name="factor" />
+                                    <field name="rate" />
+                                    <field name="rounding"/>
+                                    <field name="active" tree_invisible="1"/>
+                                </tree>
+                                <form string="Packing product" col="4">
+                                    <group colspan="4" id="head">
+                                        <label name="name"/>
+                                        <field name="name"/>
+                                        <label name="parent"/>
+                                        <field name="parent"/>
+                                        <label name="symbol"/>
+                                        <field name="symbol"/>
+                                        <label name="active"/>
+                                        <field name="active"/>
+                                        <label name="factor"/>
+                                        <field name="factor"/>
+                                        <label name="rate"/>
+                                        <field name="rate"/>
+                                        <label name="rounding"/>
+                                        <field name="rounding"/>
+                                        <label name="digits"/>
+                                        <field name="digits"/>
+                                        <label name="volume"/>
+                                        <field name="volume"/>
+                                        <label name="volume_uom"/>
+                                        <field name="volume_uom"/>
+                                    </group>
+                                    <field name="childs"/>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_product_template_form">
+            <field name="name">Product Templates</field>
+            <field name="res_model">ekd.product.template</field>
+            <field name="view_type">form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_template_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="product_template_view_tree"/>
+            <field name="act_window" ref="act_product_template_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_template_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="product_template_view_form"/>
+            <field name="act_window" ref="act_product_template_form"/>
+        </record>
+        <menuitem name="Product template" parent="product.menu_main_product"
+            sequence="2" id="menu_product_template_form"
+            action="act_product_template_form"/>
+
+        <record model="ir.action.act_window" id="act_product_template_form2">
+            <field name="name">Product Templates</field>
+            <field name="res_model">ekd.product.template</field>
+            <field name="view_type">form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_template_form2_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="product_template_view_form"/>
+            <field name="act_window" ref="act_product_template_form2"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_template_form2_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="product_template_view_tree"/>
+            <field name="act_window" ref="act_product_template_form2"/>
+        </record>
+        <menuitem name="New product template" parent="menu_product_template_form"
+            sequence="10" id="menu_product_template_form_new"
+            action="act_product_template_form2"/>
+
+        <record model="ir.model.access" id="access_product_template_group">
+            <field name="model" search="[('model', '=', 'ekd.product.template')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_product_template_group_admin">
+            <field name="model" search="[('model', '=', 'ekd.product.template')]"/>
+            <field name="group" ref="product.group_product_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+
+    </data>
+</tryton>

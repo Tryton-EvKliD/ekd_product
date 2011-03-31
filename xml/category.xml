@@ -1,1 +1,60 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/category.xml
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="category_view_tree">
+            <field name="model">product.category</field>
+            <field name="type">tree</field>
+            <field name="priority">10</field>
+            <field name="inherit" ref="product.category_view_tree"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                   <xpath
+                        expr="/tree/field[@name=&quot;rec_name&quot;]"
+                        position="after">
+                        <field name="type"/>
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="category_view_tree2">
+            <field name="model">product.category</field>
+            <field name="type">tree</field>
+            <field name="priority">20</field>
+            <field name="field_childs">childs</field>
+            <field name="inherit" ref="product.category_view_tree2"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                   <xpath
+                        expr="/tree/field[@name=&quot;name&quot;]"
+                        position="after">
+                        <field name="type"/>
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="category_view_form">
+            <field name="model">product.category</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="product.category_view_form"/>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <data>
+                   <xpath
+                        expr="/form/field[@name=&quot;name&quot;]"
+                        position="after">
+                        <label name="type"/>
+                        <field name="type"/>
+                    </xpath>
+                </data>
+                ]]>
+            </field>
+        </record>
+
+    </data>
+</tryton>

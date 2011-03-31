@@ -1,1 +1,127 @@
-/home/trytond-1.8.2/trytond/modules/ekd_product/xml/group.xml
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="group_view_tree">
+            <field name="model">product.group</field>
+            <field name="type">tree</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Product Categories">
+                    <field name="name" select="1"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="group_view_tree2">
+            <field name="model">product.group</field>
+            <field name="type">tree</field>
+            <field name="priority">20</field>
+            <field name="field_childs">childs</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <tree string="Product Categories">
+                    <field name="name"/>
+                    <field name="code_full"/>
+                </tree>
+                ]]>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="group_view_form">
+            <field name="model">product.group</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <![CDATA[
+                <form string="Product group">
+                    <label name="name"/>
+                    <field name="name"/>
+                    <label name="code"/>
+                    <field name="code"/>
+                    <label name="parent"/>
+                    <field name="parent"/>
+                    <newline/>
+                    <label name="rec_name"/>
+                    <field name="rec_name" colspan="3"/>
+                    <notebook colspan="4">
+                        <page string="Children" col="1" id="childs">
+                            <field name="childs"/>
+                        </page>
+                    </notebook>
+                </form>
+                ]]>
+            </field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_group_tree">
+            <field name="name">Groups</field>
+            <field name="res_model">product.group</field>
+            <field name="view_type">tree</field>
+            <field name="domain">[('parent', '=', False)]</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_group_tree_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="group_view_tree2"/>
+            <field name="act_window" ref="act_group_tree"/>
+        </record>
+        <menuitem parent="product.menu_main_product" sequence="2"
+            action="act_group_tree" id="menu_group_tree"/>
+
+        <record model="ir.action.act_window" id="act_group_form">
+            <field name="name">Product Groups</field>
+            <field name="res_model">product.group</field>
+            <field name="view_type">form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_group_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="group_view_tree"/>
+            <field name="act_window" ref="act_group_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_group_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="group_view_form"/>
+            <field name="act_window" ref="act_group_form"/>
+        </record>
+        <menuitem name="Groups" parent="menu_group_tree"
+            sequence="2" id="menu_group_form"
+            action="act_group_form"/>
+
+        <record model="ir.action.act_window" id="act_group_form2">
+            <field name="name">Product Groups</field>
+            <field name="res_model">product.group</field>
+            <field name="view_type">form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_group_form2_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="group_view_form"/>
+            <field name="act_window" ref="act_group_form2"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_group_form2_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="group_view_tree"/>
+            <field name="act_window" ref="act_group_form2"/>
+        </record>
+        <menuitem name="New group" parent="menu_group_form"
+            sequence="10" id="menu_group_form_new"
+            action="act_group_form2"/>
+
+        <record model="ir.model.access" id="access_product_group">
+            <field name="model" search="[('model', '=', 'product.group')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_product_group_admin">
+            <field name="model" search="[('model', '=', 'product.group')]"/>
+            <field name="group" ref="product.group_product_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+
+    </data>
+</tryton>
